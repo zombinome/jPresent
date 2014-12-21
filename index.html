@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JPresent test page</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"/>
+</head>
+<body>
+
+<h1>Presentation example</h1>
+
+<div id="presentation-1">
+    <div class="jp-dp">
+
+    </div>
+
+    <!-- Presentation controls -->
+    <button class="jp-prev-slide-btn"> < </button>
+    <span class="jp-current-slide"></span> / <span class="jp-slide-total"></span>
+    <button class="jp-next-slide-btn"> > </button>
+
+    <!-- Slides -->
+    <div class="jp-slide">
+        <h2>Slide 1</h2>
+
+        <p>HTML slide</p>
+
+        <p>Lorem ipsum dolor sit amet...</p>
+    </div>
+    <img class="jp-slide" src="imgs/slide-2.png" alt=""/>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="lib/jPresent.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#presentation-1').jPresent({
+            controls: {
+                displayContainer: '.jp-dp'
+            },
+            slideWidth: 320,
+            slideHeight: 240,
+            circular: true,
+            autoPlay: true
+        });
+    });
+</script>
+</body>
+</html>
