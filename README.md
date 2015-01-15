@@ -41,8 +41,9 @@ var plugin = $(selector).data('jPresent');
     // "Play" button selector. Used to start/resume presentation autoplay
     play: '.jp-play-btn',
     
-    // "Pause" button selector. Used to pause presentation autoplay 
-    // If the same as "Play" button selector, then target html element acts as "Play/Pause" button
+    // "Pause" button selector. Used to pause presentation autoplay.
+    // If the same as "Play" button selector, then target html element acts 
+    // as "Play/Pause" button
     pause: 'jp-pause-btn',
     
     // Html element to display current slide number
@@ -52,29 +53,32 @@ var plugin = $(selector).data('jPresent');
     slidesCountDisplay: '.jp-slide-total',
     
     // Container used to host slides during presentation. 
-    // Used in cases when slides shold be displayed inside html element different from presentation container
+    // Used in cases when slides shold be displayed inside html element 
+    // different from presentation container
     displayContainer: null
   },
   
   // Should autoplay be enabled from the start
   autoPlay: false,
   
-  // Time in milliseconds between slide switches in case of enabled presentation autoplay
+  // Time in milliseconds between slide switches in case of enabled 
+  // presentation auto play
   autoPlayTimeout: 5000,
   
-  // slide width in pixels
+  // Slide width in pixels
   slideWidth: 800,
   
-  // slide height in pixels
+  // Slide height in pixels
   slideHeight: 600,
 
   // Selector used to distinguish html elements containing slides
   slideSelector: '.jp-slide',
   
-  // Slide trainsition effect
+  // Slide transition effect
   slideTransitionEffect: 'switch',
   
-  //Slide transition speed. Used to determine transition animation speed during slide transition.
+  // Slide transition speed. Used to determine transition animation speed
+  // during slide transition
   slideTransitionSpeed: 400,
   
   // If true then: 
@@ -86,19 +90,19 @@ var plugin = $(selector).data('jPresent');
 ## Plugin API
 Plugin has following properties and methods to programmatically control presentation:
 
-### prevSlide()
+#### prevSlide()
 Switches presentation to previous slide.
 
-### nextSlide()
+#### nextSlide()
 Switches presentation to next slide.
 
-### switchTo(slideIndex)
+#### switchTo(slideIndex)
 Jumps to target slide. Slide index should be between 1 and total slide count.
 
-### play()
+#### play()
 Starts/resumes slide auto play.
 
-### pause()
+#### pause()
 Pauses slide autoplay
 
 ## Licence
