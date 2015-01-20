@@ -106,4 +106,4 @@ Starts/resumes slide auto play.
 Pauses slide autoplay
 
 ## Licence
-This library is under MIT Licence.
+This library is under [MIT Licence](http://opensource.org/licenses/MIT).
